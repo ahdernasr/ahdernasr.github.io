@@ -1,0 +1,63 @@
+.dropdown {
+  width: 100vw;
+  height: auto;
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: normal;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+}
+
+.dropdown-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  width: 100%;
+  height: 100%;
+  margin: 1vh 0 0 0;
+}
+
+.dropdown-item {
+  width: 50vw;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  height: 8vh;
+  flex-direction: column;
+  border-left: 2.5px solid black;
+  padding-left: 1rem;
+}
+
+.dropdown-item .top {
+  display: flex;
+  width: 100%;
+  height: 40%;
+  font-size: 1.5rem;
+  align-items: center;
+}
+
+.dropdown-item .top span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+.dropdown-item .top svg {
+  margin: 0 0.25rem;
+}
+
+.dropdown-item .bottom {
+  display: flex;
+  width: 100%;
+  height: 60%;
+  font-size: 1rem;
+}
+
+.python {
+  margin-right: 0;
+}

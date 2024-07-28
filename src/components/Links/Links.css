@@ -1,0 +1,45 @@
+.links {
+  width: 100vw;
+  height: 10vh;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: normal;
+}
+
+.links-sub {
+  display: flex;
+  width: 50vw;
+  align-items: center;
+  gap: 12.5px;
+}
+
+.links a {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.links span {
+  color: lightgray;
+}
+
+.github {
+  color: rgb(110, 84, 148);
+}
+
+.linked-in {
+  color: rgb(0, 119, 181);
+}
+
+.discord {
+  color: rgb(114, 137, 218);
+}

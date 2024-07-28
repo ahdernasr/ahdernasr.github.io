@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap');
+
+.main-selection {
+  width: 100vw;
+  background-color: white;
+  height: 8vh;
+  font-size: 2.75rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: normal;
+  padding: 0.25rem 0;
+}
+
+.main-selection span {
+    width: 50vw;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.main-selection svg {
+    width: 1.75rem;
+    margin-right: 0.5rem;
+}
+
+.main-selection:hover {
+  background-color: black;
+  font-size: 2.35rem;
+  color: white;
+  height: 8vh;
+}
