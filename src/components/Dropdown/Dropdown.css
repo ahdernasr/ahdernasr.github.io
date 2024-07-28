@@ -40,6 +40,12 @@
   align-items: center;
 }
 
+.dropdown-item .top a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
 .dropdown-item .top span {
   display: flex;
   align-items: center;

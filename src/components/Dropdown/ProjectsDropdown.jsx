@@ -61,6 +61,7 @@ const ProjectsDropdown = (props) => {
           <DropDownItem
             title="UO Dining Hall"
             description="A tool that allows users to have the uOttawa Dining Hall menu mailed to them daily."
+            link="https://www.github.com/ahdernasr/dailydininghall"
             languages={
               <>
                 <Go />
@@ -75,6 +76,7 @@ const ProjectsDropdown = (props) => {
           <DropDownItem
             title="Punch!"
             description="iOS + watchOS app that calculates and displays the speed of your punch."
+            link="https://www.github.com/ahdernasr/punch"
             languages={
               <>
                 <Swift />
@@ -89,6 +91,7 @@ const ProjectsDropdown = (props) => {
           <DropDownItem
             title="Personal Portfolio"
             description="This website!"
+            link="https://www.github.com/ahdernasr/portfolio"
             languages={
               <>
                 <Preact />
@@ -99,6 +102,7 @@ const ProjectsDropdown = (props) => {
           <DropDownItem
             title="ChainShare"
             description="A blockchain network based decentralised file sharing CLI."
+            link="https://www.github.com/ahdernasr/chain-share"
             languages={
               <>
                 <Rust />
@@ -109,6 +113,7 @@ const ProjectsDropdown = (props) => {
           <DropDownItem
             title="Pokedex"
             description="Pokedex clone made for a take home assessment. "
+            link="https://www.github.com/ahdernasr/pokedex"
             languages={
               <>
                 <JavaScript />
@@ -121,8 +126,9 @@ const ProjectsDropdown = (props) => {
       ) : (
         <>
           <DropDownItem
-            title="Service Novigrad"
+            title="Novigrad"
             description="Mobile government service application for SEG2505."
+            link="https://github.com/jwt2706/Novigrad"
             languages={
               <>
                 <Kotlin />
@@ -135,6 +141,7 @@ const ProjectsDropdown = (props) => {
           <DropDownItem
             title="Arabic Character Recognition"
             description="Recognising arabic characters using computer vision."
+            link="https://www.github.com/ahdernasr/arabic-char-recognition"
             languages={
               <>
                 <Python />
@@ -145,6 +152,7 @@ const ProjectsDropdown = (props) => {
           <DropDownItem
             title="Chess"
             description="Simple chess board made with vanilla JavaScript."
+            link="https://www.github.com/ahdernasr/chess"
             languages={
               <>
                 <JavaScript />
@@ -184,7 +192,7 @@ const DropDownItem = (props) => {
     <div className="dropdown-container">
       <div className="dropdown-item">
         <div className="top">
-          <p>{props.title}</p>
+          <a href={props.link ? props.link : "https://www.github.com/ahdernasr"}>{props.title}</a>
           <span>{props.languages}</span>
         </div>
         <div className="bottom">{props.description}</div>

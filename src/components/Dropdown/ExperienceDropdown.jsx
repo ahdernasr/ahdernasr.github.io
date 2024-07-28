@@ -1,7 +1,132 @@
 import "./Dropdown.css";
+import {
+  Go,
+  TypeScript,
+  React,
+  Nextjs,
+  PostgreSQL,
+  Rust,
+  Swift,
+  HTML5,
+  JavaScript,
+  CSS,
+  Preact,
+  Python,
+  Apple,
+  Figma,
+  Vite,
+  TensorFlow,
+  Kotlin,
+  Firebase,
+  Android,
+  MySQL,
+  Django,
+  Docker,
+  JWT,
+  Matplotlob,
+  GraphQL,
+  Express,
+  Linux,
+  DigitalOcean,
+  AWS,
+  CircleCI,
+  OAuth,
+  Trpc,
+  Prisma,
+  Nodejs,
+  TailwindCSS,
+  C,
+} from "../Icons/Icons";
+import { useState } from "preact/hooks";
 
 const ExperienceDropdown = (props) => {
-  return <div className="dropdown"></div>;
+  const [page, setPage] = useState(1);
+
+  return (
+    <div className="dropdown">
+      {page == 1 ? (
+        <>
+          <DropDownItem
+            title="Develop For Good (S24)"
+            description="Student Engineering Manager - Human Rights First's Litigation Tracker"
+            languages={
+              <>
+                <TypeScript />
+                <Nextjs />
+                <Trpc />
+                <Prisma />
+                <OAuth />
+                <MySQL />
+                <Figma />
+              </>
+            }
+          />
+          <DropDownItem
+            title="Hack the Hill"
+            description="Full Stack Developer - Track the Hack "
+            languages={
+              <>
+                <TypeScript />
+                <React />
+                <TailwindCSS />
+                <Nodejs />
+                <Express />
+                <PostgreSQL />
+              </>
+            }
+          />
+          <DropDownItem
+            title="UORocketry"
+            description="Embedded Software Developer - Avionics Software Subteam"
+            languages={
+              <>
+                <C />
+                <Rust />
+                <Linux />
+              </>
+            }
+          />
+        </>
+      ) : (
+        <></>
+      )}
+      <div className="button-container">
+        <div className="button-subcontainer">
+          <div>{page}/1</div>
+          <div onClick={() => setPage(page < 1 ? page + 1 : 1)}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="size-6"
+            >
+              <path
+                fillRule="evenodd"
+                d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+        <div />
+      </div>
+    </div>
+  );
+};
+
+const DropDownItem = (props) => {
+  return (
+    <div className="dropdown-container">
+      <div className="dropdown-item">
+        <div className="top">
+          <p>{props.title}</p>
+          <span>{props.languages}</span>
+        </div>
+        <div className="bottom">{props.description}</div>
+      </div>
+      <div />
+    </div>
+  );
 };
 
 export default ExperienceDropdown;
