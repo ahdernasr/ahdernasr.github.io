@@ -77,7 +77,7 @@ const ExperienceDropdown = (props) => {
           />
           <DropDownItem
             title="UORocketry"
-            description="Embedded Software Developer - Avionics Software Subteam"
+            description="Avionics Software Subteam - Hydra"
             languages={
               <>
                 <C />

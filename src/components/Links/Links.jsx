@@ -5,11 +5,13 @@ const Links = () => {
   return (
     <div className="links">
       <div className="links-sub">
-        <a className="github">Github</a>
+        <a href="https://github.com/ahdernasr" className="github">
+          Github
+        </a>
         <span>/</span>
-        <a className="linked-in">LinkedIn</a>
-        <span>/</span>
-        <a className="discord">Discord</a>
+        <a href="https://www.linkedin.com/in/ahmed-nasr-95045720a/" className="linked-in">
+          LinkedIn
+        </a>
       </div>
       <div />
     </div>
