@@ -13,7 +13,7 @@ export function Home() {
 
   return (
     <div class="home">
-      <MainSelection label="Ahmed Nasr" hover="CS @ uOttawa" />
+      <MainSelection label="Ahmed Nasr" hover="CS @ uOttawa 🏛️" />
       <MainSelection
         label="Experience"
         hover={
@@ -34,7 +34,7 @@ export function Home() {
         }}
       />
       {showProjects && <ProjectsDropdown />}
-      <MainSelection label="Contact" hover="adera073@uottawa.ca" />
+      <MainSelection label="Contact" hover="adera073@uottawa.ca 👋" />
       <Links />
     </div>
   );

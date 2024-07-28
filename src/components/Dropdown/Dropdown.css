@@ -26,7 +26,7 @@
   text-align: left;
   display: flex;
   align-items: center;
-  height: 8vh;
+  height: 9vh;
   flex-direction: column;
   border-left: 2.5px solid black;
   padding-left: 1rem;
@@ -55,9 +55,39 @@
   display: flex;
   width: 100%;
   height: 60%;
-  font-size: 1rem;
+  font-size: 0.85rem;
+  color: rgb(80, 80, 80);
+  /* font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal; */
 }
 
-.python {
-  margin-right: 0;
+.button-container {
+  width: 100vw;
+  height: 8vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  letter-spacing: normal;
+  padding: 0.25rem 0;
+}
+
+.button-container .button-subcontainer {
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button-subcontainer div {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.button-subcontainer svg {
+  width: 1.75rem;
+  cursor: pointer;
 }
