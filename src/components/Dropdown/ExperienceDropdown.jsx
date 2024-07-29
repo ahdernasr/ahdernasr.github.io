@@ -91,8 +91,10 @@ const ExperienceDropdown = (props) => {
         <></>
       )}
       <div className="button-container">
+        <div />
         <div className="button-subcontainer">
           <div>{page}/1</div>
+          <div />
           <div onClick={() => setPage(page < 1 ? page + 1 : 1)}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -107,6 +109,7 @@ const ExperienceDropdown = (props) => {
               />
             </svg>
           </div>
+          <div />
         </div>
         <div />
       </div>
@@ -117,6 +120,7 @@ const ExperienceDropdown = (props) => {
 const DropDownItem = (props) => {
   return (
     <div className="dropdown-container">
+      <div />
       <div className="dropdown-item">
         <div className="top">
           <p>{props.title}</p>

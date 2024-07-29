@@ -14,7 +14,7 @@
 
 .links-sub {
   display: flex;
-  width: 50vw;
+  width: 60vw;
   align-items: center;
   gap: 12.5px;
 }
@@ -42,4 +42,25 @@
 
 .discord {
   color: rgb(114, 137, 218);
+}
+
+@media only screen and (max-width: 750px) {
+  .links {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .links {
+    font-size: 1.15rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .links {
+    font-size: 1rem;
+  }
+  .links-sub {
+    width: 80vw;
+  }
 }

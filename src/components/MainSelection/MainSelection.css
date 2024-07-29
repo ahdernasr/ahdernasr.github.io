@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap");
 
 .main-selection {
   width: 100vw;
@@ -17,20 +17,77 @@
 }
 
 .main-selection span {
-    width: 50vw;
-    text-align: left;
-    display: flex;
-    align-items: center;
+  width: 60vw;
+  text-align: left;
+  display: flex;
+  align-items: center;
 }
 
 .main-selection svg {
-    width: 1.75rem;
-    margin-right: 0.5rem;
+  width: 1.75rem;
+  margin-right: 0.5rem;
 }
 
 .main-selection:hover {
   background-color: black;
-  font-size: 2.35rem;
+  font-size: 2.25rem;
   color: white;
   height: 8vh;
 }
+
+@media only screen and (max-width: 900px) {
+  .main-selection {
+    font-size: 2rem;
+    padding: 0.15rem 0;
+  }
+
+  .main-selection svg {
+    width: 1.25rem;
+    margin-right: 0.35rem;
+  }
+
+  .main-selection:hover {
+    font-size: 1.75rem;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  
+  .main-selection {
+    font-size: 1.85rem;
+    padding: 0.135rem 0;
+  }
+
+  .main-selection svg {
+    width: 1.15rem;
+    margin-right: 0.3rem;
+  }
+
+  .main-selection:hover {
+    font-size: 1.65rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  
+  .main-selection {
+    font-size: 1.7rem;
+    padding: 0.125rem 0;
+  }
+
+  .main-selection svg {
+    width: 1.1rem;
+    margin-right: 0.3rem;
+  }
+
+  .main-selection:hover {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .main-selection span {
+    width: 80vw;
+  }
+}
+

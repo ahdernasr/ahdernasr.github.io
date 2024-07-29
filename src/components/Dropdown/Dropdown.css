@@ -22,7 +22,7 @@
 }
 
 .dropdown-item {
-  width: 50vw;
+  width: 60vw;
   text-align: left;
   display: flex;
   align-items: center;
@@ -80,7 +80,7 @@
 }
 
 .button-container .button-subcontainer {
-  width: 50vw;
+  width: 60vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -96,4 +96,83 @@
 .button-subcontainer svg {
   width: 1.75rem;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+
+  .dropdown-item {
+    border-left: 2.2px solid black;
+  }
+  
+  .dropdown-item .top {
+    font-size: 1.2rem;
+  }
+  
+  .dropdown-item .top span {
+    margin-left: 0.75rem;
+  }
+  
+  .dropdown-item .top svg {
+    margin: 0 0.2rem;
+  }
+  
+  .dropdown-item .bottom {
+    font-size: 0.75rem;
+  }
+  
+  .button-subcontainer svg {
+    width: 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  
+  .dropdown-item .top {
+    font-size: 1rem;
+  }
+  
+  .dropdown-item .top span {
+    margin-left: 0.75rem;
+  }
+  
+  .dropdown-item .top svg {
+    margin: 0 0.2rem;
+  }
+  
+  .dropdown-item .bottom {
+    font-size: 0.7rem;
+  }
+  
+  .button-subcontainer svg {
+    width: 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  
+  .dropdown-item .top {
+    font-size: 0.8rem;
+  }
+  
+  .dropdown-item .top span {
+    margin-left: 0.65rem;
+  }
+  
+  .dropdown-item .bottom {
+    font-size: 0.65rem;
+  }
+
+  .button-subcontainer svg {
+    width: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .dropdown-item {
+    width: 80vw;
+  }
+
+  .button-container .button-subcontainer {
+    width: 80vw;
+  }
 }

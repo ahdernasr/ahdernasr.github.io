@@ -18,6 +18,7 @@ const MainSelection = (props) => {
         }
       }}
     >
+      <div />
       <span>{labelState == "hover" ? props.hover : props.label}</span>
       <div />
     </div>
