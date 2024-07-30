@@ -14,6 +14,18 @@
   font-style: normal;
   letter-spacing: normal;
   padding: 0.25rem 0;
+  background: linear-gradient(to right, black 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: none;
+}
+
+.main-selection:hover {
+  background-position: left bottom;
+  font-size: 2.25rem;
+  color: white;
+  height: 8vh;
+  transition: all .25s ease-out;
 }
 
 .main-selection span {
@@ -26,13 +38,6 @@
 .main-selection svg {
   width: 1.75rem;
   margin-right: 0.5rem;
-}
-
-.main-selection:hover {
-  background-color: black;
-  font-size: 2.25rem;
-  color: white;
-  height: 8vh;
 }
 
 @media only screen and (max-width: 900px) {

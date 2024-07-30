@@ -47,8 +47,10 @@ const ExperienceDropdown = (props) => {
       {page == 1 ? (
         <>
           <DropDownItem
+          key="(1,1)"
             title="Develop For Good (S24)"
             description="Student Engineering Manager - Human Rights First's Litigation Tracker"
+            style={{ animationDuration: "0.35s", animationDelay: "0.05s" }}
             languages={
               <>
                 <TypeScript />
@@ -62,8 +64,10 @@ const ExperienceDropdown = (props) => {
             }
           />
           <DropDownItem
+          key="(1,2)"
             title="Hack the Hill"
             description="Full Stack Developer - Track the Hack "
+            style={{ animationDuration: "0.35s", animationDelay: "0.1s" }}
             languages={
               <>
                 <TypeScript />
@@ -76,8 +80,10 @@ const ExperienceDropdown = (props) => {
             }
           />
           <DropDownItem
+          key="(1,3)"
             title="UORocketry"
             description="Avionics Software Subteam - Hydra"
+            style={{ animationDuration: "0.35s", animationDelay: "0.15s" }}
             languages={
               <>
                 <C />
@@ -121,7 +127,7 @@ const DropDownItem = (props) => {
   return (
     <div className="dropdown-container">
       <div />
-      <div className="dropdown-item">
+      <div className="dropdown-item fadeInAnimation" style={props.style}>
         <div className="top">
           <p>{props.title}</p>
           <span>{props.languages}</span>

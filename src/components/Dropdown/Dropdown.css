@@ -99,65 +99,62 @@
 }
 
 @media only screen and (max-width: 900px) {
-
   .dropdown-item {
     border-left: 2.2px solid black;
   }
-  
+
   .dropdown-item .top {
     font-size: 1.2rem;
   }
-  
+
   .dropdown-item .top span {
     margin-left: 0.75rem;
   }
-  
+
   .dropdown-item .top svg {
     margin: 0 0.2rem;
   }
-  
+
   .dropdown-item .bottom {
     font-size: 0.75rem;
   }
-  
+
   .button-subcontainer svg {
     width: 1.25rem;
   }
 }
 
 @media only screen and (max-width: 750px) {
-  
   .dropdown-item .top {
     font-size: 1rem;
   }
-  
+
   .dropdown-item .top span {
     margin-left: 0.75rem;
   }
-  
+
   .dropdown-item .top svg {
     margin: 0 0.2rem;
   }
-  
+
   .dropdown-item .bottom {
     font-size: 0.7rem;
   }
-  
+
   .button-subcontainer svg {
     width: 1.25rem;
   }
 }
 
 @media only screen and (max-width: 650px) {
-  
   .dropdown-item .top {
     font-size: 0.8rem;
   }
-  
+
   .dropdown-item .top span {
     margin-left: 0.65rem;
   }
-  
+
   .dropdown-item .bottom {
     font-size: 0.65rem;
   }
@@ -175,4 +172,20 @@
   .button-container .button-subcontainer {
     width: 80vw;
   }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeInAnimation {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards; 
 }
