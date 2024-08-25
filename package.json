@@ -7,7 +7,7 @@
 		"deploy": "gh-pages -d dist",
 		"dev": "vite",
 		"build": "vite build",
-		"start": "vite preview"
+		"start": "vite preview --host"
 	},
 	"dependencies": {
 		"preact": "^10.22.1",
