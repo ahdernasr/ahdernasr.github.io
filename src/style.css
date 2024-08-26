@@ -23,13 +23,17 @@ body {
 }
 
 #app {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevents scrollbars */
+    flex-direction: column; /* Ensures children align correctly */
 }
 
-@media (max-width: 639px) {
+/* @media (max-width: 639px) {
   main {
     margin: 2rem;
   }
-}
+} */

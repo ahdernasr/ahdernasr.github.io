@@ -94,5 +94,18 @@
   .main-selection span {
     width: 80vw;
   }
+
+  .main-selection {
+    font-size: 1.6rem;
+  }
+
+  .main-selection svg {
+    width: 1.1rem;
+    margin-right: 0.3rem;
+  }
+
+  .main-selection:hover {
+    font-size: 1.45rem;
+  }
 }
 
