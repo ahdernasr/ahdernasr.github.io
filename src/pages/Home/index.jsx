@@ -9,8 +9,6 @@ export function Home() {
   const [showExperience, setShowExperience] = useState(false);
   const [showProjects, setShowProjects] = useState(false);
 
-  console.log(showExperience, showProjects);
-
   return (
     <div class="home">
       <MainSelection label="Ahmed Nasr" hover="CS @ uOttawa 🏛️" />
