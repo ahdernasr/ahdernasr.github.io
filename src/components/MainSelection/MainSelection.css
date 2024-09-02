@@ -96,7 +96,10 @@
   }
 
   .main-selection {
-    font-size: 1.6rem;
+    font-size: 1.45rem;
+    /* background: none; */
+    background-position: none;
+    transition: none;
   }
 
   .main-selection svg {
@@ -106,6 +109,9 @@
 
   .main-selection:hover {
     font-size: 1.45rem;
+    background-position: none;
+    transition: none;
   }
+
 }
 
