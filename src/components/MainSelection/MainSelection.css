@@ -14,18 +14,14 @@
   font-style: normal;
   letter-spacing: normal;
   padding: 0.25rem 0;
-  background: linear-gradient(to right, black 50%, white 50%);
   background-size: 200% 100%;
-  background-position: right bottom;
-  transition: none;
 }
 
 .main-selection:hover {
-  background-position: left bottom;
-  font-size: 2.25rem;
+  background-color: black;
+  /* font-size: 2.25rem; */
   color: white;
   height: 8vh;
-  transition: all .075s ease-out;
 }
 
 .main-selection span {
@@ -40,6 +36,16 @@
   margin-right: 0.5rem;
 }
 
+.black {
+  background-color: black;
+  color: white;
+}
+
+.white {
+  background: white;
+  color: black;
+}
+
 @media only screen and (max-width: 900px) {
   .main-selection {
     font-size: 2rem;
@@ -52,7 +58,7 @@
   }
 
   .main-selection:hover {
-    font-size: 1.75rem;
+    /* font-size: 1.75rem; */
   }
 }
 
@@ -69,7 +75,7 @@
   }
 
   .main-selection:hover {
-    font-size: 1.65rem;
+    /* font-size: 1.65rem; */
   }
 }
 
@@ -86,7 +92,7 @@
   }
 
   .main-selection:hover {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
   }
 }
 
@@ -97,9 +103,6 @@
 
   .main-selection {
     font-size: 1.45rem;
-    /* background: none; */
-    background-position: none;
-    transition: none;
   }
 
   .main-selection svg {
@@ -108,9 +111,7 @@
   }
 
   .main-selection:hover {
-    font-size: 1.45rem;
-    background-position: none;
-    transition: none;
+    /* font-size: 1.45rem; */
   }
 
 }

@@ -6,7 +6,7 @@ const MainSelection = (props) => {
   return (
     <div
       onClick={props.onClick}
-      className="main-selection"
+      className={`${props.className} main-selection`}
       onMouseEnter={() => {
         if (props.hover) {
           setLabelState("hover");

@@ -8,17 +8,32 @@ import { useState } from "preact/hooks";
 export function Home() {
   const [showExperience, setShowExperience] = useState(false);
   const [showProjects, setShowProjects] = useState(false);
+  const [showName, setShowName] = useState(false);
+  const [showContact, setShowContact] = useState(false);
 
   return (
     <div class="home">
-      <MainSelection label="Ahmed Nasr" hover="CS @ uOttawa 🏛️" />
+      <MainSelection
+        label={showName ? "CS @ uOttawa 🏛️" : "Ahmed Nasr"}
+        className={showName ? "black" : "white"}
+        hover="CS @ uOttawa 🏛️"
+        onClick={() => {
+          setShowExperience(false);
+          setShowContact(false);
+          setShowProjects(false);
+          setShowName(!showName);
+        }}
+      />
       <MainSelection
         label="Experience"
         hover={
           showExperience ? ExperienceHoverOffLabel : ExperienceHoverOnLabel
         }
+        className={showExperience ? "black" : "white"}
         onClick={() => {
           setShowProjects(false);
+          setShowName(false);
+          setShowContact(false);
           setShowExperience(!showExperience);
         }}
       />
@@ -26,13 +41,26 @@ export function Home() {
       <MainSelection
         label="Projects"
         hover={showProjects ? ProjectsHoverOffLabel : ProjectsHoverOnLabel}
+        className={showProjects ? "black" : "white"}
         onClick={() => {
           setShowExperience(false);
+          setShowName(false);
+          setShowContact(false);
           setShowProjects(!showProjects);
         }}
       />
       {showProjects && <ProjectsDropdown />}
-      <MainSelection label="Contact" hover="adera073@uottawa.ca 👋" />
+      <MainSelection
+        label={showContact ? "adera073@uottawa.ca 👋" : "Contact"}
+        className={showContact ? "black" : "white"}
+        hover="adera073@uottawa.ca 👋"
+        onClick={() => {
+          setShowExperience(false);
+          setShowName(false);
+          setShowProjects(false);
+          setShowContact(!showContact);
+        }}
+      />
       <Links />
     </div>
   );
